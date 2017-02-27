@@ -1,18 +1,19 @@
 package com.ibeifeng.jp.model;
 
+import java.util.Set;
+
 /**
- * Created by Administrator on 2017/2/24.
+ * Created by zmzy on 2017/2/22.
  */
 public class User {
     private int id;
-    private String username;
+    private String name;
     private String password;
 
-    public User() {
-    }
+    public User(){}
 
-    public User(String username, String password) {
-        this.username = username;
+    public User(String name, String password) {
+        this.name = name;
         this.password = password;
     }
 
@@ -24,12 +25,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getName() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPassword() {
@@ -44,7 +45,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", username='" + username + '\'' +
+                ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }
