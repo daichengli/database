@@ -40,4 +40,9 @@ public class UserController {
         System.out.println(user);
         return "user/show";
     }
+
+    @RequestMapping(value = "/update",method = RequestMethod.GET)
+    public String update(User user){
+        return "";
+    }
 }
